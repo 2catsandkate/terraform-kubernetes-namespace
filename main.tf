@@ -1,13 +1,12 @@
 resource "kubernetes_namespace" "example" {
   metadata {
-    annotations = {
-      name = "example-annotation"
-    }
+    annotations = var.annotations
 
     labels = {
-      mylabel = "label-value"
-    }
+      mylabel = var.labels
 
-    name = var.name
+      name = var.name
+    }
   }
 }
+
