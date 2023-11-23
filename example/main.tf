@@ -1,4 +1,4 @@
 module "namespace" {
-  source  = "2catsandkate/namespace/kubernetes"
-  version = "0.0.1"
+  source = "2catsandkate/namespace/kubernetes"
+  name   = "test"
 }
